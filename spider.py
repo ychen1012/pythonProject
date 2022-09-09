@@ -14,7 +14,8 @@ hostlist = jsondict['initialState']['topstory']['hotList']
 
 for hot in hostlist:
     print(hot['cardId'] + "\n")
-    print(hot['target']['titleArea']['text'] + "\n")
-    print(hot['target']['excerptArea']['text'] + "\n")
-    print(hot['target']['metricsArea']['text'] + "\n")
+    print(hot['target']['titleArea']['text'])
+    print(hot['target']['excerptArea']['text'])
+    print(hot['target']['metricsArea']['text'])
+    print(str(hot['target']['link']['url']).replace("u002F", ""))
     print('--------------------------------------------------------------')
